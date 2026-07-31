@@ -7,9 +7,9 @@ current_dir = Path(__file__).parent
 print(current_dir)
 
 def main():
-    # Check number of agguments
+    # Check number of arguments
     if len(sys.argv) != 2:
-        print(f"{Fore.RED}Wrong usage: python main.py <path ro directory>")
+        print(f"{Fore.RED}Wrong usage: python main.py <path to directory>")
         sys.exit(1)
 
     directory = Path(sys.argv[1])

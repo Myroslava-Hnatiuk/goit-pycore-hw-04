@@ -2,10 +2,9 @@ from pathlib import Path
 from colorama import Fore, Style
 
 current_dir = Path(__file__).parent
-print(current_dir)
 
 def show_directory(path: Path, indent: str = ""):
-    # Recursive function search for directory
+    # Recursive function to search a directory
 
     try:
         for item in sorted(path.iterdir()):
