@@ -4,7 +4,6 @@ from colorama import Fore
 from show_directory import show_directory 
 
 current_dir = Path(__file__).parent
-print(current_dir)
 
 def main():
     # Check number of arguments

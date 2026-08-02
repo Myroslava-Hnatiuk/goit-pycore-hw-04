@@ -20,18 +20,21 @@ def change_contact(args, contracts):
         name, phone = args
         if name in contracts:
             contracts[name] = phone
-            return "Contact updater."
+            return "Contact updated."
         else:
             return "Contact is not found"
     except:
         return 'Invalid input. Example: change Tom 11111111'
 
 def show_phone(args, contacts): 
-    name = args[0]
-    if name in contacts:
-        return contacts[name]
-    else:
-        return "Contact is not found"
+    try:
+        name = args[0]
+        if name in contacts:
+            return contacts[name]
+        else:
+            return "Contact is not found"
+    except:
+        return 'Invalid input. Example: phone Tom'
 
 def show_all(contacts): 
     result = []
